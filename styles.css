@@ -1,0 +1,27 @@
+.card {
+    text-align: center;
+}
+
+button {
+    width: 10vw;
+    margin-left: 4.5rem;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 15vh;
+}
+
+.countryList {
+    margin: 2rem 4rem 2rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card-header {
+    background-color:white;
+    font-size: 10rem ;
+}
