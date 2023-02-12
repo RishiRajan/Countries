@@ -43,13 +43,13 @@ function fetchSuccess(data) {
     flagImage.setAttribute("src", `${country.flags.svg}`);
 
     let capital = create("p", "capital", "capital");
-    capital.innerText = "Capital : " + country.capital;
+    capital.innerHTML = "<b>Capital : </b>" + country.capital;
 
     let continent = create("p", "continent", "continent");
-    continent.innerText = "Continent : " + country.region;
+    continent.innerHTML = "<b>Continent : </b>" + country.region;
 
     let code = create("p", "code", "code");
-    code.innerText = "Country Code : " + country.cca3;
+    code.innerHTML = "<b>Country Code : </b>" + country.cca3;
 
     let coordinates = country.latlng;
 
@@ -85,7 +85,7 @@ async function getWeather(location, weather) {
   let result = await fetch(url);
   let data = await result.json();
 
-  weather.innerText = `Weather: ${data.weather[0].description}`;
+  weather.innerHTML = "<b>Weather: </b>" +data.weather[0].description;
 }
 
 
