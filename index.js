@@ -58,7 +58,7 @@ function fetchSuccess(data) {
       "btn btn-outline-primary",
       "weatherbtn",
     );
-    weatherButton.innerText = "Check current weather";
+    weatherButton.innerText = "Current weather";
     weatherButton.addEventListener("click", function () {
       getWeather(coordinates, weatherDetails);
     });
